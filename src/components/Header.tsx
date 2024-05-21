@@ -11,7 +11,10 @@ function Header({}: Props) {
           <p className='text-xl font-bold'>Outer.Chat</p>
         </div>
 
-        <button className='text-white hover:text-gray-300 flex items-center space-x-2'>
+        <button
+          className='text-white hover:text-gray-300 flex items-center space-x-2'
+          onClick={() => window.open('https://github.com/outer-chat', '_blank')}
+        >
           <span>GitHub</span>
           <Launch />
         </button>
